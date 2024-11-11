@@ -1,0 +1,125 @@
+/* style.css */
+
+/* Reset de margens e paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222; /* Preto */
+    color: white;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #222; /* Preto */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #e5a00d; /* Dourado */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Seção Inicial */
+.hero {
+    background-color: #6a0dad; /* Roxo */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 3em;
+}
+
+.hero .btn {
+    background-color: #e5a00d; /* Dourado */
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Produtos */
+#products {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #222; /* Preto */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card .add-to-cart {
+    background-color: #6a0dad; /* Roxo */
+    padding: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product-card .add-to-cart:hover {
+    background-color: #e5a00d; /* Dourado */
+}
+
+/* Carrinho de Compras */
+#checkout {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Contato */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Rodapé */
+footer {
+    background-color: #222; /* Preto */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

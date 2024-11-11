@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMMEC - Acessórios para Celulares</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>SMMEC</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#checkout">Carrinho</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Página Inicial -->
+    <section id="home" class="hero">
+        <h2>Bem-vindo à SMMEC</h2>
+        <p>Produtos modernos e acessórios para seu celular.</p>
+        <a href="#products" class="btn">Ver Produtos</a>
+    </section>
+
+    <!-- Galeria de Produtos -->
+    <section id="products">
+        <h2>Produtos</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="iphone-case.jpg" alt="Capa para iPhone">
+                <h3>Capa para iPhone</h3>
+                <p>Preço: 100 MZN</p>
+                <button class="add-to-cart" data-product="Capa para iPhone" data-price="100">Comprar</button>
+            </div>
+
+            <div class="product-card">
+                <img src="headphones.jpg" alt="Headphones">
+                <h3>Headphones</h3>
+                <p>Preço: 500 MZN</p>
+                <button class="add-to-cart" data-product="Headphones" data-price="500">Comprar</button>
+            </div>
+
+            <div class="product-card">
+                <img src="smartwatch.jpg" alt="Smartwatch">
+                <h3>Smartwatch</h3>
+                <p>Preço: 1500 MZN</p>
+                <button class="add-to-cart" data-product="Smartwatch" data-price="1500">Comprar</button>
+            </div>
+
+            <div class="product-card">
+                <img src="airpods.jpg" alt="AirPods">
+                <h3>AirPods</h3>
+                <p>Preço: 1000 MZN</p>
+                <button class="add-to-cart" data-product="AirPods" data-price="1000">Comprar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrinho de Compras -->
+    <section id="checkout">
+        <h2>Carrinho de Compras</h2>
+        <div id="cart-items">
+            <p>Itens no carrinho: 0</p>
+            <button id="checkout-btn">Finalizar Compra</button>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contact">
+        <h2>Contato</h2>
+        <form action="#">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 SMMEC | Todos os direitos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
